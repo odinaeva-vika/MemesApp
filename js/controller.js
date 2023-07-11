@@ -6,7 +6,7 @@ class Controller {
     });
 
     this.view = new View({
-      onNewMeme: this.handleViewNewMeme.bind(this),
+      onNewMeme: this.handleViewNewMeme,
     });
 
     this.api = new API();
@@ -29,7 +29,7 @@ class Controller {
 
   handleModelMemesApiChanged = (memesApi) => {
     this.view.renderSelect(memesApi);
-    this.view.initValues(); // Вызовем метод initValues для отображения начальных значений
+    this.view.initValues();
   }
 
   handleViewNewMeme = (top, bottom, memesApi) => {

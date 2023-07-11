@@ -11,8 +11,6 @@ class View {
     this.selectNode.addEventListener("change", this._handleValueChange);
     this.inputTopNode.addEventListener("change", this._handleValueChange);
     this.inputBottomNode.addEventListener("change", this._handleValueChange);
-
-    this.render([], false); // Инициализируем пустыми значениями при создании объекта View
   }
 
   initValues() {
