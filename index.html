@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Memes App</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="container">
+    <h1 class="title">Memes App</h1>
+  </div>
+</header>
+    <main class="main">
+      <section class="welcom">
+        <div class="container">
+          <div class="main__wrapper">
+            <div class="box">
+              <h2 class="main__title">Настройки:</h2>
+              <form id="form" action="javascript:void(0)">
+                <label class="label" for="select">Мем</label>
+                <select class="select" name="memes" id="select">
+                  <!-- <option value="Drake Hotline Bling">Drake Hotline Bling</option> -->
+                </select>
+                <label class="label" for="inputTop">Текст сверху</label>
+                <input class="input" id="inputTop" type="text" value="Нельзя просто так">
+                
+                <label class="label" for="inputBottom">Текст снизу</label>
+                <input class="input" id="inputBottom" type="text" value="Взять и...">
+                <div id="error"></div>
+              </form>
+            </div>
+            <div class="box">
+              <h2 class="main__title">Превью:</h2>
+              <div id="boxText" class="main__box-img">
+                <!-- <img src="" alt="Мем"></img>
+                <div class="box__text">
+                  <div>Нельзя просто так</div>
+                  <div>Взять и...</div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/model.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/controller.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
